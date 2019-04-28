@@ -42,6 +42,7 @@
   </ol>
     <li>Testing Procedure:</li>
     <ol>
+      <li>Make sure code looks good(AND MAKES SENSE) in the code comparison.</li>
       <li>Run `git branch -a` to see all branches, both local and remote.</li>  
       <li>Run `git checkout <i>branchname</i>`. You are not in detached HEAD mode which is fine for testing.</li>
       <li>Test everything works as expected.</li>
