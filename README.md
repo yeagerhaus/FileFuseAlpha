@@ -1,6 +1,6 @@
 # README
 
-* SETUP: https://gorails.com/setup/windows/10
+* <h2>SETUP: https://gorails.com/setup/windows/10 </h2>
 <p>Follow these instructions with the following edits(we are using Ruby 2.6.1 and Rails 5.2.3:</p>
 <ol> 
   <li>Use rvm</li>
@@ -14,7 +14,7 @@
   </ol>
 </ol>
 
-* WORKFLOW:
+* <h2>WORKFLOW:</h2>
 <p>This is a basic workflow with git. These steps don't take very long to run, though there can be quite a few steps. This will probably change over time as the project grows and changes. I have included some "unneccesary" git commands, and have marked them as `OPTIONAL`. They are not required to run, but help quite a bit with being careful. In addition, there are a few times you will need to change values from what I have added here. These are: branchname and filename(Ignore the `<>`'s).</p>
 <ol> 
   <li>Run `git branch`. This will show you what branches you have locally on your machine. Make sure you don't have any old branches there. If you need to delete one, run `git branch -d branchname` to delete it. You cannot/should not delete master. It's important.</li>
@@ -42,7 +42,7 @@
   </ol>
 </ol>
     
-* TO GET DONE BEFORE ANYTHING LAUNCHES:
+* <h2>TO GET DONE BEFORE ANYTHING LAUNCHES: </h2>
 <ol>
   <li>Add automated Ruby testing with RSpec</li>
   <li>Add testing procedure</li>
