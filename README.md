@@ -46,14 +46,16 @@
       <li>Run `git branch -a` to see all branches, both local and remote.</li>  
       <li>Run `git checkout <i>branchname</i>`. You are not in detached HEAD mode which is fine for testing.</li>
       <li>Test everything works as expected.</li>
-      <li>Run automated tests and style checks(once we get them set up)</li>
+      <li>Run automated tests(once we get them set up) and style checks:</li>
+        <ul>
+          <li>Run `rubocop` to run style checks (you can use `rubocop -a` to auto-fix any issues that can be done automatically, but until we have a more stable setup, we shouldn't run it unless absolutely sure).<li>
+        </ul>
     </ol>
 </ol>
     
 * <h2>TO GET DONE BEFORE ANYTHING LAUNCHES: </h2>
 <ol>
-  <li>Add automated Ruby testing with RSpec(Get to 100% coverage)</li>
-  <li>Add automatic style checking with Rubocop</li>
-  <li>Add MySQL database()</li>
+  <li>Add automated Ruby testing (eventually we should use RSpec, but the default suite is fine for now)</li>
+  <li>Add MySQL database(not really necessary at first, but before launch it NEEDS to be MySQL)</li>
   <li>Add seed data()</li>
 </ol>
