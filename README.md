@@ -40,12 +40,18 @@
       <li>Add some labels with the panel to the right. I need to make better labels, but until we figure out how this will all work together, I won't make many.</li>
       <li>Create the pull request and wait for someone to test it.</li>
   </ol>
+    <li>Testing Procedure:</li>
+    <ol>
+      <li>Run `git branch -a` to see all branches, both local and remote.</li>  
+      <li>Run `git checkout <i>branchname</i>`. You are not in detached HEAD mode which is fine for testing.</li>
+      <li>Test everything works as expected.</li>
+      <li>Run automated tests and style checks(once we get them set up)</li>
+    </ol>
 </ol>
     
 * <h2>TO GET DONE BEFORE ANYTHING LAUNCHES: </h2>
 <ol>
   <li>Add automated Ruby testing with RSpec</li>
-  <li>Add testing procedure</li>
   <li>Add automatic style checking with Rubocop</li>
   <li>Add MySQL database</li>
   <li>Add seed data</li>
