@@ -52,8 +52,8 @@
     
 * <h2>TO GET DONE BEFORE ANYTHING LAUNCHES: </h2>
 <ol>
-  <li>Add automated Ruby testing with RSpec</li>
+  <li>Add automated Ruby testing with RSpec(Get to 100% coverage)</li>
   <li>Add automatic style checking with Rubocop</li>
-  <li>Add MySQL database</li>
-  <li>Add seed data</li>
+  <li>Add MySQL database()</li>
+  <li>Add seed data()</li>
 </ol>
