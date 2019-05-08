@@ -1,38 +1,28 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<%
+=begin%>
+  Almost all of the authentication code is here: https://medium.com/@wintermeyer/authentication-from-scratch-with-rails-5-2-92d8676f6836
+<%
+=end%>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="shortcut icon" href="images/logo/Favicon.jpg">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background: linear-gradient(to top right, #00D5E5 , #2372E6, #5303D4, #9335FF);
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-</style>
-<body>
 
+<% unless (current_user == nil) %>
+  <p>Current user: <%= current_user.email%></p> <span class="w3-display-topright"> <%= link_to "Logout", "/logout" %></span>
+<% end %>
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
     <%= image_tag  "logo/icon_white.png",  height: "100px" %>
-    <%
-=begin%>
- <img src="assets/images/logo/icon_white.png" height="100px" alt="logo">
-<%
-=end%>
   </div>
   <div class="w3-display-middle">
     <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <a href="login.html.erb"><p class="w3-large w3-center">CLICK HERE FOR BETA LOGIN</p></a>
+    <div class="w3-center w3-text-white" >
+      <%= link_to  "Sign In", '/login', class: "w3-large w3-center" %>
+    </div>
+    <div class="w3-center w3-text-white">
+      <%= link_to  "Sign Up", '/users/new', class: "w3-large w3-center" %>
+    </div>
   </div>
 </div>
 
-</body>
-</html>
