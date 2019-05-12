@@ -6,10 +6,6 @@ a {
     color: #ffffff;
 }
 
-a:visited {
-
-}
-
 body,h1 {
     font-family: "Raleway",
     sans-serif
@@ -22,4 +18,16 @@ body, html {
   min-height: 100%;
   background-position: center;
   background-size: cover;
+}
+
+.logo {
+  height: 100px;
+}
+
+input[type=text]:focus {
+  border: 3px solid #2372E6;
+}
+
+form {
+    padding: 25px 50px;
 }

@@ -8,9 +8,10 @@
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <%= image_tag  "logo/icon_white" %>
+    <%= image_tag  "logo/icon_white" , class:'logo', alt:'logo' %>
   </div>
-  <div class="w3-display-middle" style="background-color:#333">
+  <div class="w3-display-middle" style="background-color:#333; padding:1%;">
+  <h1>Sign Up</h1>
   <%= form_with(model: user, local: true) do |form| %>
     <% if user.errors.any? %>
       <div id="error_explanation">
