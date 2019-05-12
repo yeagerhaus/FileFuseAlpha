@@ -4,12 +4,14 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    # @users = User.all
+    raise ActionController::RoutingError.new('Not Found')
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    raise ActionController::RoutingError.new('Not Found')
   end
 
   # GET /users/new
@@ -19,6 +21,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    raise ActionController::RoutingError.new('Not Found')
   end
 
   # POST /users
